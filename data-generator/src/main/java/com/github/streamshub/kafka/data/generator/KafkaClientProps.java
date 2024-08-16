@@ -20,7 +20,7 @@ public class KafkaClientProps {
         props.put("value.serializer", AvroKafkaSerializer.class.getName());
 
         props.put(SerdeConfig.REGISTRY_URL, registryUrl);
-        props.putIfAbsent(Serdeonfig.ENABLE_CONFLUENT_ID_HANDLER, Boolean.TRUE);
+        props.putIfAbsent(SerdeConfig.ENABLE_CONFLUENT_ID_HANDLER, Boolean.TRUE);
         props.putIfAbsent(SerdeConfig.USE_ID, IdOption.contentId.toString());
         props.putIfAbsent(SerdeConfig.ENABLE_HEADERS, Boolean.FALSE);
         props.putIfAbsent(SerdeConfig.AUTO_REGISTER_ARTIFACT, Boolean.TRUE);

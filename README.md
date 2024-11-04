@@ -1,5 +1,7 @@
 # Flink SQL Examples
 
+TEST
+
 This repository contains assets for running Flink SQL examples that start with one or more streams of
 data in Apache Kafka topics, run a Flink SQL job and result in one or more streams of data sent
 to Apache Kafka topics.
